@@ -42,3 +42,10 @@ function draw() {
   textSize(16);
   text("Tilt your phone to move the buttons", width / 2, 100);
 }
+
+function touchStarted() {
+  setupOrientation(10);
+  setupMotion(10);
+  getAudioContext().resume();
+  return false;
+}
