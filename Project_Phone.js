@@ -41,5 +41,5 @@ function draw() {
   text("Friend Controller", width / 2, 60);
 
   textSize(16);
-  text("Tilt your phone to move the buttons", width / 2, 100);
+  text("Tilt your phone to move the buttons2", width / 2, 100);
 }
