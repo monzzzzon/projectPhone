@@ -2,7 +2,7 @@ let shake = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // setupMotion(10);
+  setupMotion(10);
 }
 
 function draw() {
@@ -16,6 +16,7 @@ function draw() {
   
   let motion = motionSensor.get();
   shake = Math.sqrt(motion.x * motion.x + motion.y * motion.y + motion.z * motion.z);
+  console.log("Shake detected:", shake);
   }
   
   // Left/right tilt into a value between -1 and 1
@@ -40,12 +41,5 @@ function draw() {
   text("Friend Controller", width / 2, 60);
 
   textSize(16);
-  text("Tilt your phone to move the buttons1", width / 2, 100);
-}
-
-function touchStarted() {
-  setupOrientation(10);
-  setupMotion(10);
-  getAudioContext().resume();
-  return false;
+  text("Tilt your phone to move the buttons", width / 2, 100);
 }
