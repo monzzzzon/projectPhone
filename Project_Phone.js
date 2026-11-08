@@ -2,7 +2,7 @@ let shake = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  setupMotion(10);
+  // setupMotion(10);
 }
 
 function draw() {
