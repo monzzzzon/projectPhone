@@ -32,8 +32,7 @@ function draw() {
   fill(100, 200, 255);
     noStroke();
     circle(width / 2 + tiltX * 100, height / 2 + tiltY * 100, 30);
-  } 
-  
+
   
   fill(255);
   textAlign(CENTER);
@@ -42,3 +41,4 @@ function draw() {
 
   textSize(16);
   text("Tilt your phone to move the buttons", width / 2, 100);
+}
