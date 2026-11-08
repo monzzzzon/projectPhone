@@ -56,9 +56,9 @@ function doMotion(e) {
     motionSensor.y = motionValues.accY;
     motionSensor.z = motionValues.accZ;
 
-    accXOld = motionValues.accX;
-    accYOld = motionValues.accY;
-    accZOld = motionValues.accZ;
+    motionValues.accXOld = motionValues.accX;
+    motionValues.accYOld = motionValues.accY;
+    motionValues.accZOld = motionValues.accZ;
   }
 }
 
