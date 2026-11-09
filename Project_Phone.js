@@ -41,6 +41,6 @@ function draw() {
   text("Friend Controller", width / 2, 60);
 
   textSize(16);
-  text("Tilt your phone to move the buttons1", width / 2, 100);
+  text("Tilt your phone to move the buttons6", width / 2, 100);
   text("Shake value: " + Math.round(shake), width / 2, 130);
 }
