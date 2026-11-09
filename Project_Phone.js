@@ -20,9 +20,9 @@ function draw() {
   }
   
   // Left/right tilt into a value between -1 and 1
-  let tiltX = constrain(map(orientation.gamma, -45, 45, -1, 1), -1, 1);
+  let tiltX = constrain(map(orientation.gamma, -90, 90, -1, 1), -1, 1);
   // Forward/backward tilt into a value between -1 and 1
-  let tiltY = constrain(map(orientation.beta, -45, 45, -1, 1), -1, 1);
+  let tiltY = constrain(map(orientation.beta, -180, 180, -1, 1), -1, 1);
   
   // Sends the tilt values to the computer if MQTT is connected
   if (client.connected) {
